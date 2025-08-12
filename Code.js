@@ -47,7 +47,7 @@ const HISTORY_HEADERS = ["ファイル名", "保存日時", "フォルダパス"
  */
 function doGet(e) {
   createHistorySheetIfNotExists();
-  return HtmlService.createHtmlOutputFromFile('index')
+  return HtmlService.createHtmlOutputFromFile('app')
       .setTitle('音声録音アプリ (MP3対応)')
       .addMetaTag('viewport', 'width=device-width, initial-scale=1');
 }
